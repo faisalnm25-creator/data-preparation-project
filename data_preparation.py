@@ -21,3 +21,7 @@ df['species'] = le.fit_transform(df['species'])
 print("\nData after transformation:")
 print(df.head())
 
+
+
+df['species'] = df['species'].apply(lambda x: x / 0)
+
